@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhotoRTTS</title>
+    <!-- ИКОНКА НА ВКЛАДКЕ СТРАНИЦЫ -->
+    <link rel="shortcut icon" href="img/icons/logo.png" type="image/png">
+    <!-- ПОДКЛЮЧЕНИЕ ФАЙЛА СО СТИЛЯМИ -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- ПОДКЛЮЧЕНИЕ KIT ДЛЯ ИКОНОК -->
+    <script
+    src="https://kit.fontawesome.com/dd4a236084.js"
+    crossorigin="anonymous">
+    </script>
+    <!-- ПОДКЛЮЧЕНИЕ SLICK СЛАЙДЕРА -->
+    <link rel="stylesheet" href="slick/slick.css">
+    <link rel="stylesheet" href="slick/slick-theme.css">
+</head>
+<body>
+    <!-- СТРЕЛКА ДЛЯ ПРОКРУТКИ СТРАНИЦЫ ВВЕРХ -->
+    <div id="toTop">
+        <div class="arrow">
+          <span class="arrow__left"></span>
+          <span class="arrow__right"></span>
+       </div>
+    </div>
+    <!-- ШАПКА САЙТА -->
+    <header>
+        <!-- БЛОК ШАПКИ -->
+        <section class = "head">
+            <a href=""><img src="img/icons/logo.png" alt="logo" class="logo-img"></a>
+            <a href=""><p class="company-name">PhotoRTTS</p></a>
+            <a href="#"><img src="img/icons/user.png" alt="myaccount" class="my-account" id="account"></a>
+            <a href="#"><img src="img/icons/basket.png" alt="mybasket" class="my-basket"></a>
+        </section>
+        <!-- БЛОК НАВИГАЦИИ -->
+        <section class = "navigation">
+            <nav>
+                <input type="checkbox" id="checkbox-menu" />
+                <label for="checkbox-menu">
+                <ul class="menu touch">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="shop.php">Shop</a></li>
+                    <li><a href="service.html">Sevice</a></li>
+                    <li><a href="#contact" id="Down">Contact</a></li>
+                    <li><a href="account.php">My Account</a></li>
+                </ul>
+                <span class="toggle">☰</span>
+                </label>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <!-- БЛОК СО СЛАЙДЕРОМ -->
+        <section class="slickSlider">
+            <div class="slider">
+                <div class="slider__item">
+                    <img src="img/slider/slide1.jpg" alt="sale">
+                </div>
+                <div class="slider__item">
+                    <img src="img/slider/slide2.jpg" alt="combo">
+                </div>
+                <div class="slider__item">
+                    <img src="img/slider/slide3.jpg" alt="sberfood">
+                </div>
+            </div>
+        </section>
+            <!-- БЛОК С САМЫМИ ПОПУЛЯРНЫМИ ТОВАРАМИ В КАТАЛОГЕ-->
+        <section class="bestsellers">
+            <div class="wrapper bestsell">
+                <h2>BESTSELLERS</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="img/catalog/polaroid.jpg" alt="polaroid">
+                        <div class="card-container">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <div class="card-info">
+                                <div class="money">3500 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/catalog/photoalbum.jpg" alt="photoalbum">
+                        <div class="card-container">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <div class="card-info">
+                                <div class="money">900 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/catalog/objective.jpg" alt="objective">
+                        <div class="card-container">
+                            <p>Lorem ipsum dolor sit amet consectetur.</p>
+                            <div class="card-info">
+                                <div class="money">8500 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- ПОДВАЛ СТРАНИЦЫ -->
+    <footer>
+        <div class="footer">
+          <div class="footer__links">
+            <div class="footer__link">
+              <p>MY ACCOUNT</p>
+              <a href="account.php">my account</a>
+              <a href="#">shoping basket</a>
+              <a href="#">my wishes</a>
+              <a href="#">personal information</a>
+            </div>
+            <div class="footer__link">
+              <p>SERVICE</p>
+              <a href="#">printing photos</a>
+              <a href="#">cameras repair</a>
+              <a href="#">objectives repair</a>
+            </div>
+            <div class="footer__link">
+              <p id="contact">CONTACT</p>
+              <a href="#"><i class="fas fa-phone-alt"></i> +7(923)-777-55-86</a>
+              <a href="#"><i class="far fa-envelope"></i> alex.shevelev.01@mail.ru</a>
+              <a href="#"><i class="fab fa-discord"></i> NoLifeRTTS</a>
+            </div>
+            <div class="footer__link">
+              <p>STAY UP TO DATE</p>
+              <a href="#">PhotoRTTS club members receive <br>
+                a 15% discount code <br>
+                redeemable against all orders. <br>
+                New friends get free shipping <br>
+                on your first order.</a>
+            </div>
+          </div>
+          <div class="footer__block">
+            <div class="footer__block__logo">
+              <h3>© PhotoRTTS</h3>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- Скрытый блок для регистрации -->
+      <div class="register">
+        <div class="register__inner">
+            <h2>Registration</h2>
+            <form action="register.php" method="POST">
+                <input type="text" name="username" id="username" placeholder="Username" required><br>
+                <input type="text" name="email" id="email" placeholder="Email" required><br>
+                <input type="password" name="password" id="password" placeholder="Password" required><br>
+                <input type="submit" value="Register"><br>
+                <a href="#log" id="log"><div>Login</div></a>
+            </form>
+        </div>
+    </div>
+    <!-- Скрытый блок для авторизации -->
+    <div class="author">
+        <div class="author__inner">
+            <h2>Login</h2>
+            <form action="login.php" method="POST">
+                <input type="text" name="username" id="username" placeholder="Username" required><br>
+                <input type="password" name="password" id="password" placeholder="Password" required><br>
+                <input type="submit" value="Login"><br>
+                <a href="#log" id="reg"><div>Register</div></a>
+            </form>
+        </div>
+    </div>
+    <!--    Фон для невидимых блоков -->
+    <div class="popup__bg"></div>
+      <!-- ПОДКЛЮЧЕНИЕ JQUERY -->
+      <!-- ПОДКЛЮЧЕНИЕ JQUERY-->
+      <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+      <script  src="https://code.jquery.com/jquery-migrate-3.3.0.min.js"></script>
+      <!-- ПОДКЛЮЧЕНИЕ SLICK -->
+      <script  src="slick/slick.min.js"></script> 
+      <!-- ПОДКЛЮЧЕНИЕ СВОИХ СКРИПТОВ -->
+      <script src="js/slider.js"></script>
+      <script src="js/script.js"></script>
+    
+</body>
+</html>
