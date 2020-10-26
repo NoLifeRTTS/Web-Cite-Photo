@@ -1,6 +1,6 @@
 <?php
     session_start();
-    $conn = mysqli_connect('localhost', 'mysql', 'mysql');
+    $conn = mysqli_connect('localhost', 'root', '');
     $select_db = mysqli_select_db($conn, 'dbstore');
     if (isset($_SESSION['username']) && isset($_SESSION['password'])) {
         $username = $_SESSION['username'];

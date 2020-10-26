@@ -3,7 +3,7 @@ session_start();
 if (isset( $_SESSION['username'])) {
     $username = $_SESSION['username'];
     $lid = $_POST['id'];
-    $conn = mysqli_connect('localhost', 'mysql', 'mysql');
+    $conn = mysqli_connect('localhost', 'root', '');
     $select_db = mysqli_select_db($conn, 'dbstore');
     $query = "SELECT productname, link, description, price, basketid FROM store WHERE likeid = '$lid' ";
     //$query = "INSERT INTO wishes (username, link, description, price) VALUES ('$username','$link','$description','$price')"; 
